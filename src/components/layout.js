@@ -29,7 +29,13 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
+      <div className="backgroundImage" style={{
+        backgroundImage: `url(/images/church-mars-martines.jpg)`,
+        backgroundSize: `cover`,
+        
+      }}> 
 
+      
       <div
         style={{
          
@@ -37,16 +43,12 @@ const Layout = ({ children }) => {
           maxWidth: 960,
           padding: `0 1.0875rem 1.45rem`,
           
+          
         }}
       >
         <main>{children}</main>
+      </div>
 
-       
-          
-          {/* , Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a> */}
-        
       </div>
 
       
