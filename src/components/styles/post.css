@@ -9,6 +9,23 @@
     margin-bottom: 3rem;
 }
 
+.post__image-box {
+    display: inline-block;
+    width: 12rem;
+    height: 12rem;
+    border: 1px solid black;
+}
+
+/* .post__title::after {
+    content: "";
+    display: block;
+    margin-top: 2rem;
+    width: 80%;
+    height: 1px;
+    background-color: rgb(112, 112, 112);
+} */
+
+
 
 
 .post__content {

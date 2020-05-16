@@ -9,13 +9,23 @@ const Header = ({ siteTitle }) => (
       marginBottom: `1.45rem`,
     }}
   >
+    <h1 style={{ 
+            position: `absolute`,
+            top: `.6rem`,
+            left: `2.2rem`,
+            fontSize: `4.5rem`
+             }}>
+        WB
+      </h1>
     <div
       style={{
         margin: `0 auto`,
+        marginLeft: `12rem`,
         maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
       }}
     >
+      
       {/* <h1 style={{ margin: 0, display: `inline-block` }}>
         <Link
           to="/"

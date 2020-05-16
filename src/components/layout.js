@@ -32,8 +32,11 @@ const Layout = ({ children }) => {
       <div className="backgroundImage" style={{
         backgroundImage: `url(/images/church-mars-martines.jpg)`,
         backgroundSize: `cover`,
+        width: `100vw`,
+        height: `100vh`
         
       }}> 
+       </div>
 
       
       <div
@@ -49,7 +52,7 @@ const Layout = ({ children }) => {
         <main>{children}</main>
       </div>
 
-      </div>
+     
 
       
       <Footer></Footer>
