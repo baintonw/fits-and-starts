@@ -10,6 +10,7 @@ const Post = (props) => {
             <div className="post__image-box"
                 style={{
                     backgroundImage: `url(${props.imageUrl})`,
+                    backgroundPosition: `center`,
                     backgroundSize: `cover`,
                 }}
             >

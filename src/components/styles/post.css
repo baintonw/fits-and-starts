@@ -13,7 +13,9 @@
     display: inline-block;
     width: 12rem;
     height: 12rem;
-    border: 1px solid black;
+    border-radius: 3px;
+    margin-bottom: 2rem;
+    /* border: 1px solid black; */
 }
 
 /* .post__title::after {
