@@ -35,7 +35,6 @@ const IndexPage = () => (
         marginTop: `12rem`
       }}>Welcome to my blog.</p>
       <p>Here are some of my posts: </p>
-      <img src={WorldTrade} />
 
       {/* Posts */}
       <div className="postContainer">
