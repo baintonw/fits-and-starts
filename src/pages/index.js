@@ -1,44 +1,81 @@
 import React from "react"
+import { graphql } from "gatsby"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
+// import Image from "../components/image"
 import SEO from "../components/seo"
 
 //My Components
 import Post from "../components/post"
 //My Containers
-import PostContainer from "../containers/PostContainer"
+// import PostContainer from "../containers/PostContainer"
 
 //Styles
 import "../components/styles/postContainer.css"
 
 
+const Title = (props) => {
+  return(
+     <div style=
+            {{
+                position: `absolute`,
+                bottom: `3rem`,
+                fontSize: `4rem`,
+                color: `snow`,
+                width: `40%`,
+                // border: `1px solid black`,
+                paddingLeft: `2rem`,
+                lineHeight: `1`,
+                // marginTop: `10rem`
+            }}
+      >
+          <p>Fits<br></br>and<br></br> Starts</p>
+          
+          
+          
 
-const IndexPage = () => (
+
+
+      </div>
+  )
+}
+
+
+// console.log(`graphql: `, graphql)
+
+const IndexPage = ({ data }) => (
   
-  <Layout name="Hello">
+  <Layout>
+    {/* <div> Hello {data.site.siteMetadata.title}</div> */}
    {/* children */}
       <SEO title="Home" />
       <div className="backgroundImage" 
            style={{
             backgroundImage: `url(../images/church-mars-martines.jpg)`,
             backgroundSize: `cover`,
-            width: `100vw`,
-            height: `100vh`
+            width: `93.5vw`,
+            height: `82vh`,
+            margin: `0 auto`,
       }}>
-        {/* <h1 style={{
-                // fontSize: `6rem`,
-                // marginBottom: `4rem`,
-                // marginTop: `-17rem`,
-                // marginLeft: `-20rem`,
-                // color: `antiquewhite`,
-                // width: `100%`,
-            }}>
-          Fits and Starts
-        </h1>  */}
+      <Title name={data.site.siteMetadata.title}></Title>
+
+        
+
        </div>
   </Layout>
 )
+
+//GraphQL query
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`
+
 
 export default IndexPage

@@ -1,0 +1,30 @@
+.header {
+    background-color: snow;
+}
+
+.nav-heading { 
+    
+}
+
+.nav-link {
+    display: inline-block;
+    text-decoration: none; 
+    color: black;
+    margin-left: 8rem;
+    transition: all 2s;
+}
+
+.logo-heading {
+    
+        position: absolute;
+        top: 0rem;
+        left: 2.2rem;
+        font-size: 3.5rem;
+        
+}
+
+.logo-link {
+    text-decoration: none;
+    color: black;
+
+}
