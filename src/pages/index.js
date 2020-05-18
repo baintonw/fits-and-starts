@@ -31,12 +31,6 @@ const Title = (props) => {
             }}
       >
           <p>Fits<br></br>and<br></br> Starts</p>
-          
-          
-          
-
-
-
       </div>
   )
 }

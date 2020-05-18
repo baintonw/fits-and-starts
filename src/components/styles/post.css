@@ -1,5 +1,31 @@
-.post {
-    /* background-color: dodgerblue; */
+.left {
+    /* position: fixed; */
+    vertical-align:top;
+    display: inline-block;
+    width: 38.2%;
+    height: 82vh;
+    /* border: 1px solid red; */
+}
+
+.right {
+    /* position: fixed; */
+    vertical-align:top;
+    display: inline-block;
+    /* border: 1px solid blue; */
+    width: 61.8%;
+    height: 82vh;
+    overflow: auto;
+    padding-top: 4rem;
+    padding-left: 2rem;
+}
+
+.right > p {
+    margin-left: 2rem;
+}
+
+
+/* Original Post css */
+/* .post {
     margin-bottom: 5rem;
 }
 
@@ -15,23 +41,9 @@
     height: 12rem;
     border-radius: 3px;
     margin-bottom: 2rem;
-    /* border: 1px solid black; */
 }
 
-/* .post__title::after {
-    content: "";
-    display: block;
-    margin-top: 2rem;
-    width: 80%;
-    height: 1px;
-    background-color: rgb(112, 112, 112);
-} */
-
-
-
-
 .post__content {
-    /* font-style: italic; */
     font-weight: 400;
     line-height: 1.9rem;
 }
@@ -47,4 +59,4 @@
 
 .post:last-child::after {
    display: none;
-}
+} */

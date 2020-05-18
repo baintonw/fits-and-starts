@@ -6,11 +6,22 @@ import Post from "../components/Post"
 
 //Images imported using webpack
 import WorldTrade from "../images/world-trade.jpg"
+import Stavros from "../images/stavros-messios-eaj7W12Ry68-unsplash.jpg"
 
 const Posts = () => {
     return(
         <Layout>
-            <div
+            <Post imageURL={Stavros}></Post>
+            {/* <Post imageURL={Stavros}></Post> */}
+            
+        </Layout>
+    )
+}
+
+export default Posts
+
+//Original Post template
+{/* <div
                 style={{
                 
                 margin: `0 auto`,
@@ -26,9 +37,4 @@ const Posts = () => {
                 <Post imageUrl={WorldTrade} postTitle="Will's FIRST Post"></Post>
                 <Post postTitle="Will's SECOND Post"></Post>
                 <Post postTitle="Will's Third Post"></Post>
-            </div>
-        </Layout>
-    )
-}
-
-export default Posts
+</div> */}
