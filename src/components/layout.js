@@ -13,7 +13,8 @@ import Header from "./header"
 import Footer from "./footer"
 import "./styles/layout.css"
 
-const Layout = ({ children }) => {
+const Layout = ({ children }, props ) => {
+
   // queries site for site metadata, found in config 
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -24,33 +25,21 @@ const Layout = ({ children }) => {
       }
     }
   `)
-  console.log('children: ', children)
+
+  console.log('children: ', children, 'props: ', props)
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div className="backgroundImage" style={{
-        backgroundImage: `url(/images/church-mars-martines.jpg)`,
-        backgroundSize: `cover`,
-        width: `100vw`,
-        height: `100vh`
-        
-      }}> 
-       </div>
-
       
-      <div
-        style={{
-         
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 8.0875rem 8.45rem`,
-          
-          
-        }}
-      >
+      <Header siteTitle={data.site.siteMetadata.title} />
+
+  
+      
+      
+      
+      
         <main>{children}</main>
-      </div>
+      
 
      
 

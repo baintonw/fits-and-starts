@@ -9,14 +9,17 @@ const Header = ({ siteTitle }) => (
       marginBottom: `1.45rem`,
     }}
   >
-    <h1 style={{ 
-            position: `absolute`,
-            top: `.6rem`,
-            left: `2.2rem`,
-            fontSize: `4.5rem`
-             }}>
-        WB
-      </h1>
+    <Link to='/'>
+      <h1 style={{ 
+              position: `absolute`,
+              top: `.6rem`,
+              left: `2.2rem`,
+              fontSize: `4.5rem`
+              }}>
+           WB
+        </h1>
+    </Link>
+    
     <div
       style={{
         margin: `0 auto`,
@@ -40,20 +43,23 @@ const Header = ({ siteTitle }) => (
       <h2 style={{ 
           display: `inline-block`
           }}>
-        <Link style={{ 
-          display: `inline-block`,
-          textDecoration: `none`, 
-          color: `black` }}>
+        <Link to='/posts'
+              style={{ 
+                display: `inline-block`,
+                textDecoration: `none`, 
+                color: `black` 
+              }}>
           Posts
         </Link>
       </h2>
 
       <h2 style={{ display: `inline-block`,
           marginLeft: `2rem` }}>
-        <Link style={{ 
-          display: `inline-block`, 
-          textDecoration: `none`, 
-          color: `black` }}>
+        <Link to='/about' 
+              style={{ 
+              display: `inline-block`, 
+              textDecoration: `none`, 
+              color: `black` }}>
           About
         </Link>
       </h2>
@@ -61,10 +67,12 @@ const Header = ({ siteTitle }) => (
       <h2 style={{ display: `inline-block`,
             marginLeft: `2rem`
           }}>
-        <Link style={{ 
-          display: `inline-block`, 
-          textDecoration: `none`, 
-          color: `black` }}>
+        <Link to='/contact'
+              style={{ 
+              display: `inline-block`, 
+              textDecoration: `none`, 
+              color: `rgba(0,0,0,.7)`
+               }}>
           Contact
         </Link>
       </h2>
