@@ -4,16 +4,26 @@ import React from "react"
 import Layout from "../components/Layout"
 import Post from "../components/Post"
 
+import Carousel from "../containers/Carousel"
+
 //Images imported using webpack
 import WorldTrade from "../images/world-trade.jpg"
 import Stavros from "../images/stavros-messios-eaj7W12Ry68-unsplash.jpg"
+import Mosque from "../images/apeksha-k-_IP0Ly_6FIo-unsplash.jpg"
+import Bilal from "../images/bilal-o--aSyfQQxPjU-unsplash.jpg"
+import Karla from "../images/karla-aranda-xrhKjr-OIvc-unsplash.jpg"
+
 
 const Posts = () => {
-    return(
+    let postArray = [{img: Stavros},{img: WorldTrade},{img: Bilal},{img: Karla},{img: Stavros}]
+    return (
         <Layout>
-            <Post imageURL={Stavros}></Post>
-            {/* <Post imageURL={Stavros}></Post> */}
-            
+            <Carousel>
+                {/* <Post imageURL={Karla}></Post> */}
+                {postArray.map(post => {
+                    return <Post imageURL={post.img}></Post>
+                })}
+            </Carousel>
         </Layout>
     )
 }

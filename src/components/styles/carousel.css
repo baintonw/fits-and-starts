@@ -1,0 +1,8 @@
+.carousel {
+    /* display: block; */
+    /* background-color: rgba(0,0,0,.2); */
+    
+    height: 82vh; 
+    display: flex;
+    overflow: auto;
+}

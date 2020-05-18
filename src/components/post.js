@@ -6,13 +6,14 @@ import WorldTrade from "../images/world-trade.jpg"
 
 const Post = (props) => {
     return(
-          <div>
+          <div className="post">
               
                 
               <div  className="left" style={{
                     backgroundImage: `url(${props.imageURL})`,
                     backgroundPosition: `center`,
                     backgroundSize: `cover`,
+                    marginLeft: `1rem`,
                 }}>
 
               </div>
