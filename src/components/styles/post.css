@@ -1,4 +1,6 @@
 .post {
+    transition: all 2s;
+    /* overflow: hidden; */
     min-width: 100%;
 }
 
@@ -7,6 +9,7 @@
     display: inline-block;
     width: 38.2%;
     height: 82vh;
+    /* border: 1px solid red; */
 }
 
 .right {
@@ -21,9 +24,9 @@
     padding-left: 2rem;
 }
 
-.right > p {
+/* .right > p {
     margin-left: 2rem;
-}
+} */
 
 
 /* Original Post css */

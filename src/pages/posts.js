@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 
 //Components
 import Layout from "../components/Layout"
@@ -15,13 +15,24 @@ import Karla from "../images/karla-aranda-xrhKjr-OIvc-unsplash.jpg"
 
 
 const Posts = () => {
-    let postArray = [{img: Stavros},{img: WorldTrade},{img: Bilal},{img: Karla},{img: Stavros}]
+    console.log('USE STATE: ', useState)
+    let postArray = [{img: Stavros, id: 0},{img: WorldTrade, id: 1},{img: Bilal, id: 2},{img: Karla, id: 3},{img: Stavros, id: 4}]
+    const [x, setX] = useState(0);
+    console.log('x: ', x)
+    const moveLeft = () => {
+        setX(x + 100)
+        console.log('moving left!')
+    }
+    const moveRight = () => {
+        setX(x - 100)
+
+        console.log('moving Right!')
+    }
     return (
         <Layout>
-            <Carousel>
-                {/* <Post imageURL={Karla}></Post> */}
-                {postArray.map(post => {
-                    return <Post imageURL={post.img}></Post>
+            <Carousel moveLeft={moveLeft} moveRight={moveRight} >
+                {postArray.map((post, index) => {
+                    return <Post translateX={x} id={"farts"} key={index} imageURL={post.img}></Post>
                 })}
             </Carousel>
         </Layout>
@@ -29,6 +40,9 @@ const Posts = () => {
 }
 
 export default Posts
+
+{/* <Post imageURL={Karla}></Post> */}
+
 
 //Original Post template
 {/* <div

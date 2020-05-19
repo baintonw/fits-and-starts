@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import "./styles/post.css"
 
 import WorldTrade from "../images/world-trade.jpg"
@@ -6,14 +6,14 @@ import WorldTrade from "../images/world-trade.jpg"
 
 const Post = (props) => {
     return(
-          <div className="post">
+          <div className="post" style={{transform: `translateX(${props.translateX}%)`}}>
               
                 
               <div  className="left" style={{
                     backgroundImage: `url(${props.imageURL})`,
                     backgroundPosition: `center`,
                     backgroundSize: `cover`,
-                    marginLeft: `1rem`,
+                    // marginLeft: `1rem`,
                 }}>
 
               </div>

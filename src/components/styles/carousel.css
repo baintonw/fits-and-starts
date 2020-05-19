@@ -1,8 +1,30 @@
 .carousel {
     /* display: block; */
     /* background-color: rgba(0,0,0,.2); */
-    
+    position: relative;
     height: 82vh; 
     display: flex;
-    overflow: auto;
+    /* transform: translateX(-80%); */
+    /* align-items: center; */
+    /* overflow: hidden; */
+    transition: all 4s ease-in;
+}
+
+.leftBtn {
+ position: fixed;
+ width: 4%;
+ height: 100%;
+ background-color: rgba(0,0,0,.4);
+ left: 0;
+ z-index: 100;
+
+}
+
+.rightBtn {
+    position: fixed;
+    width: 4%;
+    height: 100%;
+    background-color: rgba(0,0,0,.4);
+    right: 0;
+    z-index: 100;
 }
