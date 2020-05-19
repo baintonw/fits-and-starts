@@ -20,13 +20,19 @@ const Posts = () => {
     const [x, setX] = useState(0);
     console.log('x: ', x)
     const moveLeft = () => {
-        setX(x + 100)
-        console.log('moving left!')
+            if(x < 0) {
+                setX(x + 100)
+
+            }
+        
+        console.log('moving left!', 'x: ', x)
     }
     const moveRight = () => {
-        setX(x - 100)
-
-        console.log('moving Right!')
+        console.log(postArray.length - 1)
+            if(x > (postArray.length - 1) * -100){
+                setX(x - 100)
+            }
+        console.log('moving Right!', 'x: ', x)
     }
     return (
         <Layout>
