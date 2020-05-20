@@ -22,7 +22,6 @@ const Posts = () => {
     const moveLeft = () => {
             if(x < 0) {
                 setX(x + 100)
-
             }
         
         console.log('moving left!', 'x: ', x)
