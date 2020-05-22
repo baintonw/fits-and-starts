@@ -6,9 +6,13 @@ const Carousel = (props) => {
     console.log('props in Carousel: ', props)
     return(
         <div className="carousel">
-            <button onClick={() => props.moveLeft()} className="leftBtn">Left</button>
+            <button onClick={() => props.moveLeft()} className="leftBtn">
+                <p className="scroll-icon">&lt;</p>        
+            </button>
                 {props.children}
-           <button onClick={() => props.moveRight()} className="rightBtn">Right</button>
+           <button onClick={() => props.moveRight()} className="rightBtn">
+                <p className="scroll-icon">&gt;</p>
+           </button>
         </div>
     )
 }

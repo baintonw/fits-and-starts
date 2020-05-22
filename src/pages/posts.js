@@ -45,25 +45,3 @@ const Posts = () => {
 }
 
 export default Posts
-
-{/* <Post imageURL={Karla}></Post> */}
-
-
-//Original Post template
-{/* <div
-                style={{
-                
-                margin: `0 auto`,
-                maxWidth: 960,
-                padding: `0 8.0875rem 8.45rem`,
-
-                }}
-            >
-                <p style={{
-                    marginTop: `12rem`
-                }}>Welcome to my blog.</p>
-                <p>Here are some of my posts: </p>
-                <Post imageUrl={WorldTrade} postTitle="Will's FIRST Post"></Post>
-                <Post postTitle="Will's SECOND Post"></Post>
-                <Post postTitle="Will's Third Post"></Post>
-</div> */}
