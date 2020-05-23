@@ -13,7 +13,6 @@ import Mosque from "../images/apeksha-k-_IP0Ly_6FIo-unsplash.jpg"
 import Bilal from "../images/bilal-o--aSyfQQxPjU-unsplash.jpg"
 import Karla from "../images/karla-aranda-xrhKjr-OIvc-unsplash.jpg"
 
-
 const Posts = () => {
     console.log('USE STATE: ', useState)
     let postArray = [{img: Stavros, id: 0},{img: WorldTrade, id: 1},{img: Bilal, id: 2},{img: Karla, id: 3},{img: Stavros, id: 4}]

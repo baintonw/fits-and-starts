@@ -1,9 +1,12 @@
 .about-container {
-    margin: 5rem auto;
+    margin: 1rem auto;
     width: 62.5%;
-    border: 1px solid blueviolet;
+    height: 81vh;
+    overflow: auto;
+    /* border: 1px solid blueviolet; */
     /* background-color: blueviolet;*/
     padding: 2rem 4rem;
+    box-shadow: 0 2rem 6rem rgba(0,0,0,.4);
 }
 
 .about__title {
