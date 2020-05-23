@@ -56,9 +56,6 @@ const IndexPage = ({ data }) => (
             margin: `0 auto`,
       }}>
       <Title name={data.site.siteMetadata.title}></Title>
-
-        
-
        </div>
   </Layout>
 )

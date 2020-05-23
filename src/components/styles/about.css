@@ -1,0 +1,29 @@
+.about-container {
+    margin: 5rem auto;
+    width: 62.5%;
+    border: 1px solid blueviolet;
+    /* background-color: blueviolet;*/
+    padding: 2rem 4rem;
+}
+
+.about__title {
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.about__thumb {
+    display: block;
+    width: 10rem;
+    height: 10rem;
+    /* border: 1px solid salmon; */
+    border-radius: 4px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    /* background-image: url('images/andrea-ferrario-CYUSjP7oy3k-unsplash.jpg'); */
+}
+
+.about__text {
+    display: block;
+    margin-top: 2rem;
+    line-height: 1.8;
+}

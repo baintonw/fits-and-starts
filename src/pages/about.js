@@ -1,11 +1,15 @@
 import React from "react"
 
 import Layout from "../components/Layout"
+import AboutContainer from "../containers/AboutContainer.js"
+
+import Image from "../images/andrea-ferrario-CYUSjP7oy3k-unsplash.jpg"
+
 
 const About = () => {
     return(
         <Layout>
-            About Page
+            <AboutContainer imageURL={Image}></AboutContainer>
         </Layout>
     )
 }
