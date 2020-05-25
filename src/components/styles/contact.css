@@ -1,4 +1,5 @@
 .contact-container {
+    position: relative;
     margin: 12rem auto;
     /* background-color: chocolate; */
     width: 80%;
@@ -7,35 +8,40 @@
     /* color: red; */
 }
 
-a > h3 {
+.contact-container__prompt {
+   
+}
+
+/*  */
+
+h3 {
    position: absolute;
    top: 39%;
    left: 50%;
    font-size: 4.2rem;
    /* color: dodgerblue; */
-   transform: translate(-50%, -50%);
+   transition: all .1s;
+   transform: translate(-50%, -50%) scale(1);
    cursor: pointer;
-   text-shadow: 0px 4px 4px rgba(0,0,0,.4);
 
-   /* background-color: black; */
-   /* -webkit-text-fill-color: transparent;
-   -webkit-background-clip: text;
-   background-image: linear-gradient(to bottom right, black, black); */
+   user-select: none;
+   
 }
 
-a:active > h3 {
+/* a:active > h3 {
     position: absolute;
     top: 39%;
     left: 50%;
     font-size: 4.2rem;
-    /* color: dodgerblue; */
-    transform: translate(-50%, -40%);
+    color: dodgerblue;
+    transform: translate(-50%, -50%) scale(.99);
     cursor: pointer;
-    text-shadow: 0px 2px 2px rgba(0,0,0,.4);
+    user-select: none;
+    /* text-shadow: 0px 2px 2px rgba(0,0,0,.4); */
  
     /* background-color: black; */
     /* -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-image: linear-gradient(to bottom right, black, black); */
- }
+ /* } */ 
 
