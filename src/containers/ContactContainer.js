@@ -18,6 +18,9 @@ class ContactContainer extends React.Component {
         this.setState({
             emailCopied: true
         })
+        console.log('target: ', e.target)
+
+        e.target.classList.add('copied')
         
     }
 
@@ -25,11 +28,9 @@ class ContactContainer extends React.Component {
         console.log('this.state: ', this.state)
         return(
             <div className="contact-container">
-                <div className="contact-container__prompt">{this.state.emailCopied ? 'Copied' : 'Click to copy: '}</div>
+                <div className="contact-container__prompt">{this.state.emailCopied ? 'Copied!' : 'Click to copy: '}</div>
                 <div className="contact-container__email-box">
-                    
-                        <h3 onClick={(e) => this.copyText(e)} className="contact-container__email">baintonw@gmail.com</h3>
-                    
+                        <h3 onClick={(e) => this.copyText(e)} className="contact-container__email">baintonw@gmail.com</h3> 
                 </div>
                 <div className="contact-container__links">
                     
