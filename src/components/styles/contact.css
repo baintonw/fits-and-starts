@@ -1,15 +1,12 @@
 .contact-container {
     position: relative;
     margin: 12rem auto;
-    /* background-color: chocolate; */
+    /* background-color: rgb(4, 20, 253); */
     width: 80%;
     height: 12rem;
     text-align: center;
     /* color: red; */
-}
 
-.contact-container__prompt {
-   
 }
 
 h3 {
@@ -25,7 +22,38 @@ h3 {
    -webkit-user-select: none;
    user-select: none;
 
+   /* background-color: indianred; */
+
+   /* height: 100%; */
+
+
    
+}
+/* LEFT border */
+h3::before {
+    content: "";
+    border: 2px solid black;
+    position: absolute;
+    top: 0;
+    left: -.7rem;
+    height: 0%;
+
+    transition: all 2s;
+}
+/* RIGHT border */
+h3::after {
+    content: "";
+    border: 2px solid black;
+    position: absolute;
+    bottom: 0;
+    right: -.7rem;
+    height: 0%;
+
+    transition: all 2s;
+}
+
+.contact-container__email-box {
+    border: 1px solid red;
 }
 
 h3.copied {
@@ -42,6 +70,54 @@ h3.copied {
     animation: hop .2s;
 
  }
+
+ h3.copied::before {
+     height: 100%;
+ }
+
+ h3.copied::after {
+    height: 100%;
+}
+
+.top-bottom-border {
+    display: inline;
+
+}
+/* BOTTOM border start */
+.top-bottom-border::before {
+    content: "";
+    border: 2px solid red;
+    position: absolute;
+    left: 0;
+    bottom: -1rem;
+    width: 0%;
+
+    transition: all 2s;
+
+ }
+
+/* TOP border start */
+ .top-bottom-border::after {
+    content: "";
+    border: 2px solid red;
+    position: absolute;
+    right: 0;
+    top: -.5rem;
+    width: 0%;
+
+    transition: all 2s;
+
+ }
+
+ h3.copied > .top-bottom-border::before { 
+    width: 101.75%;
+ }
+
+ h3.copied > .top-bottom-border::after {
+    width: 101.75%;
+ }
+
+
 
 @keyframes hop {
      0% {
