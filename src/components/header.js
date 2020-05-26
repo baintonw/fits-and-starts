@@ -8,27 +8,16 @@ import "./styles/header.css"
 
 const Header = ({ siteTitle }) => (
   <header className="header">
-    
-    
       <h1 className="logo-heading">
           <Link className="logo-link" to='/'
-          activeStyle={{color: `tomato` }}
+            activeStyle={{color: `tomato` }}
           >
-           WB
-           </Link>
+            WB
+          </Link>
       </h1>
     
     
-    <div className="navigation"
-      style={{
-        margin: `0 auto`,
-        marginLeft: `12rem`,
-        maxWidth: 960,
-        // padding: `1.45rem 1.0875rem`,
-        padding: `1rem 0 0 0`,
-        // border: `1px solid black`,
-      }}
-    >
+    <div className="navigation">
       <h2 className="nav-heading" style={{ 
           display: `inline-block`
           }}>

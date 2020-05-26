@@ -21,6 +21,7 @@ import "../components/styles/postContainer.css"
 const Title = (props) => {
   return(
      <div style=
+     
             {{
                 position: `absolute`,
                 bottom: `5%`,

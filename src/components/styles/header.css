@@ -1,27 +1,51 @@
 .header {
     background-color: snow;
+    /* border: 1px solid salmon; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 0rem;
+    /* justify-content: space-evenly;     */
+    /* margin-top: 1rem; */
+    
+}
+
+.logo-heading {
+    
+    position: relative;
+    top: 1rem;
+    left: 2.2rem;
+    font-size: 3.5rem;
+    
 }
 
 .nav-heading { 
     
 }
 
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    top: 1rem;
+    /* border: 1px solid dodgerblue; */
+    /* margin: 0 auto; */
+    margin-left: 4rem;
+    width: 30%;
+    max-width: 960;
+    /* padding: 1rem 0 0 0; */
+}
+
 .nav-link {
-    display: inline-block;
+    /* display: inline-block; */
     text-decoration: none; 
     color: black;
-    margin-left: 8rem;
+    /* margin-left: 8rem; */
     
 }
 
-.logo-heading {
-    
-        position: absolute;
-        top: 0rem;
-        left: 2.2rem;
-        font-size: 3.5rem;
-        
-}
+
 
 .logo-link {
     text-decoration: none;
