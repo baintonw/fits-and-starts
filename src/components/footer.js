@@ -6,7 +6,7 @@ import "./styles/footer.css"
 const Footer = () => {
     return ( 
             <footer className="footer">
-                © {new Date().getFullYear()} 
+                <p className="copyright">© {new Date().getFullYear()} Will Bainton</p>
             </footer>
     )
 }

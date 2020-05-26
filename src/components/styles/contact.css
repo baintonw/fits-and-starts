@@ -9,6 +9,10 @@
 
 }
 
+.contact-container__prompt {
+    position: absolute;
+}
+
 h3 {
    position: absolute;
    top: 39%;

@@ -4,12 +4,13 @@
     bottom: 0;
     left: 0;
     width: 100vw;
-    
-    /* height: 5vh; */
-    /* display: block; */
+
     padding: 0rem 3rem;
-    color: dodgerblue;
+    color: black;
     background-color: snow;
 
 }
 
+.copyright {
+    margin: 1rem 0 1rem 3rem;
+}

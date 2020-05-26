@@ -23,7 +23,7 @@ const Title = (props) => {
      <div style=
             {{
                 position: `absolute`,
-                bottom: `3rem`,
+                bottom: `5%`,
                 fontSize: `4rem`,
                 color: `snow`,
                 width: `40%`,
@@ -33,7 +33,7 @@ const Title = (props) => {
                 // marginTop: `10rem`
             }}
       >
-          <p>Fits<br></br>and<br></br> Starts</p>
+          <p>Fits and Starts</p>
       </div>
   )
 }
