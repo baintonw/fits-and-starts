@@ -1,6 +1,6 @@
 import React from "react"
 
-import Layout from "../components/Layout"
+import Layout from "../components/layout"
 import AboutContainer from "../containers/AboutContainer.js"
 
 import Image from "../images/andrea-ferrario-CYUSjP7oy3k-unsplash.jpg"

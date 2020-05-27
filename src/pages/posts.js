@@ -1,8 +1,11 @@
 import React, { useState } from "react"
 
 //Components
-import Layout from "../components/Layout"
-import Post from "../components/Post"
+
+//CASE SENSITIVE
+import Layout from "../components/layout"
+////////////////////////////////////////
+import Post from "../components/post"
 
 import Carousel from "../containers/Carousel"
 
