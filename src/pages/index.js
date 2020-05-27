@@ -32,7 +32,7 @@ const Title = (props) => {
                 lineHeight: `1`,
             }}
       >
-          <p>Fits and Starts</p>
+          <p style={{color: `black`}}>Fits and Starts</p>
       </div>
   )
 }
