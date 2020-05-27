@@ -14,6 +14,9 @@ import Post from "../components/post"
 //My Containers
 // import PostContainer from "../containers/PostContainer"
 
+//Image
+import HeroImage from "../images/mars-martinez.jpg"
+
 //Styles
 import "../components/styles/postContainer.css"
 
@@ -32,7 +35,7 @@ const Title = (props) => {
                 lineHeight: `1`,
             }}
       >
-          <p style={{color: `black`}}>Fits and Starts</p>
+          <p style={{color: `snow`}}>Fits and Starts</p>
       </div>
   )
 }
@@ -45,7 +48,7 @@ const IndexPage = ({ data }) => (
       <SEO title="Home" />
       <div className="backgroundImage" 
            style={{
-            backgroundImage: `url(../images/church-mars-martines.jpg)`,
+            backgroundImage: `url(${HeroImage})`,
             backgroundSize: `cover`,
             width: `93.5vw`,
             height: `82vh`,
