@@ -110,14 +110,12 @@ h3.copied {
  h3.copied::before {
     height: 132%;
     border: 2px solid rgba(0,0,0,1);
-    /* border: 2px solid rgba(0,250,154,1); */
 
  }
  /* RIGHT  - AFTER*/
  h3.copied::after {
     height: 132%;
     border: 2px solid rgba(0,0,0,1);
-    /* border: 2px solid rgba(0,250,154,1); */
 
 }
 
@@ -129,7 +127,6 @@ h3.copied {
     /* BOTTOM - AFTER */
  h3.copied > .top-bottom-border::before { 
     width: 103.4%;
-    /* border: 2px solid rgba(0,250,154,1); */
     border: 2px solid rgba(0,0,0,1);
 
  }
@@ -137,7 +134,6 @@ h3.copied {
  h3.copied > .top-bottom-border::after {
     width: 103.4%;
     border: 2px solid rgba(0,0,0,1);
-    /* border: 2px solid rgba(0,250,154,1); */
 
  }
 
