@@ -28,19 +28,14 @@ const Title = (props) => {
                 fontSize: `4rem`,
                 color: `snow`,
                 width: `40%`,
-                // border: `1px solid black`,
                 paddingLeft: `2rem`,
                 lineHeight: `1`,
-                // marginTop: `10rem`
             }}
       >
           <p>Fits and Starts</p>
       </div>
   )
 }
-
-
-// console.log(`graphql: `, graphql)
 
 const IndexPage = ({ data }) => (
   
