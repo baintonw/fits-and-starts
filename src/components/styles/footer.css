@@ -5,12 +5,13 @@
     left: 0;
     width: 100vw;
 
-    padding: 0rem 3rem;
+    padding: .5rem 3rem;
     color: black;
     background-color: snow;
 
 }
 
 .copyright {
-    margin: 1rem 0 1rem 3rem;
+    display: inline;
+
 }
