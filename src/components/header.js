@@ -10,7 +10,7 @@ const Header = ({ siteTitle }) => (
   <header className="header">
       <h1 className="logo-heading">
           <Link className="logo-link" to='/'
-            activeStyle={{color: `dodgerblue` }}
+            activeStyle={{color: `tomato` }}
           >
             WB
           </Link>
